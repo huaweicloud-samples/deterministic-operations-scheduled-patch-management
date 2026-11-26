@@ -1,0 +1,7 @@
+# FunctionGraph 函数运行期依赖（随 zip 打包，见 infra/build_function.py）
+# obs（esdk-obs-python）为 FGS 运行环境内置，无需、也不可自带。
+# 版本已钉死：HSS SDK 的方法名/请求类随小版本漂移（3.1.209 已验证下列方法存在：
+# list_host_status / list_host_vuls / create_vulnerability_scan_task；修复端点走 do_http_request）。
+huaweicloudsdkcore==3.1.209
+huaweicloudsdkhss==3.1.209
+huaweicloudsdksmn==3.1.209
